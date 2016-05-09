@@ -1,7 +1,7 @@
 # Self Responsive HTML5 Widgets
 
 This project aims to combine a _Content First-approach_ with _responsive design_ of a _web application_ to improve usability and readability.
-Therefore is **angular directive** adds or removes classes **depending on the available dimensions of the widget itself**.
+Therefore this **angular directive adds or removes classes depending on the available dimensions of the widget itself**.
 This allows responsive design on elementary level.
 No more coupling of widget designs and page break points.
 
