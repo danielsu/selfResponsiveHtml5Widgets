@@ -1,7 +1,7 @@
 # Self Responsive HTML5 Widgets
 
 This project aims to combine a _Content First-approach_ with _responsive design_ of a _web application_ to improve usability and readability.
-Therefore is directive adds or removes classes **depending on the available dimensions of the widget itself**.
+Therefore is **angular directive** adds or removes classes **depending on the available dimensions of the widget itself**.
 This allows responsive design on elementary level.
 No more coupling of widget designs and page break points.
 
@@ -15,6 +15,11 @@ On medium displays we want to minimize the width and restructure the information
 On small displays all information of one row should be shown stacked in a single column.
 This might work with media queries, based on the page width.
 ~~The example pages shows a vertical slider, so the user can adjust the width of the content box.~~
+
+##Dependencies
+* underscore.js for debounce()
+* jQuery for container size calculations
+* AngularJS 1.x
 
 ##Usage
 * Import the 'selfResponsiveWidgetsDirectives.js' file.
@@ -47,6 +52,6 @@ This might work with media queries, based on the page width.
 Sometimes widgets / UI-components have got multiple layouts to provide best fit for different screen widths. Generally this is toggled via CSS Media Queries, based on the width of the page. This may get nested and complex quickly. Ideally the widget can decide based on its existing space, what layout to choose. When designing application specific widgets, it's time to define what layout is most usable on what container width.
 
 ##Alternative approaches
-**CSS Grid Systems**: Control width of components depending on the width of the page. Options to display containers as a stack. Massive layout changes not possible.
-**Media Queries in page.css**: Possible, but result in nesting of page widths and widget styles. This leads to tight coupling of page and widgets, gets complex quickly and decreases maintainability.
-**This?**: Provide design changes of widgets based on their own container width while keeping complex web applications maintainable.
+* **CSS Grid Systems**: Control width of components depending on the width of the page. Options to display containers as a stack. Massive layout changes not possible.
+* **Media Queries in page.css**: Possible, but result in nesting of page widths and widget styles. This leads to tight coupling of page and widgets, gets complex quickly and decreases maintainability.
+* **This project**: Provide design changes of widgets based on their own container width while keeping complex web applications maintainable. Uses resize-event of browser. Resize of vertical slider to be done.
